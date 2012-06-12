@@ -15,5 +15,11 @@ def kill_celery():
       print "kill:"+job_id
   
 
-kill_celery()
+
+def kill_celery():
+	#sudo kill  `ps -ef | grep -i 'projeto_django/manage.py celeryd' | grep -v grep | awk '{print $2}'`
+	execute_shell('sudo kill  `ps -ef | grep -i \'projeto_django/manage.py celeryd\' | grep -v grep | awk \'{print $2}\'`')
+#kill_celery()
+#kill_celery()
+
 kill_celery()

@@ -14,6 +14,9 @@ def access_site():
 
 @task()
 def find_site():
+
+  #SELECT to find sites
+  
   print "Finding site"
   value = access_site()
   if value > 200:
